@@ -1,5 +1,5 @@
 # KotlinTextviewExample
-Basic thing of Kotlin..
+- Basic thing of Kotlin..
 Button click and dynamically text added to the TextView...
 Create a new TextView programmatically in Kotlin Android
 Create a new Button programmatically in Kotlin Android
