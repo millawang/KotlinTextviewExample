@@ -43,17 +43,20 @@ class MainActivity : AppCompatActivity() {
     Create a new Button programmatically in Kotlin Android
      */
     private fun createButtonDynamically() {
+        // creating the button
         val dynamicButton = Button(this)
+        // setting layout_width and layout_height using layout parameters
         dynamicButton.layoutParams = LinearLayout.LayoutParams(
             LinearLayout.LayoutParams.WRAP_CONTENT,
             LinearLayout.LayoutParams.WRAP_CONTENT
         )
         dynamicButton.text = "Dynamic Button"
         dynamicButton.setBackgroundColor(Color.GREEN)
+        // add Button to LinearLayout
         mainLayout.addView(dynamicButton)
 
-        dynamicButton.setOnClickListener { v->
-            text.text="Dynamic button clicked by user"
+        dynamicButton.setOnClickListener { v ->
+            text.text = "Dynamic button clicked by user"
         }
     }
 }
