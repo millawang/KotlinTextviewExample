@@ -51,5 +51,9 @@ class MainActivity : AppCompatActivity() {
         dynamicButton.text = "Dynamic Button"
         dynamicButton.setBackgroundColor(Color.GREEN)
         mainLayout.addView(dynamicButton)
+
+        dynamicButton.setOnClickListener { v->
+            text.text="Dynamic button clicked by user"
+        }
     }
 }
