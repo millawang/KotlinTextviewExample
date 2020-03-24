@@ -2,6 +2,7 @@ package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Layout.JUSTIFICATION_MODE_INTER_WORD
 import android.view.Gravity
 import android.widget.TextView
 import android.widget.Toast
@@ -14,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         /*
         dynamic textView generated
+
          */
         createTextViewDynamically()
 
@@ -28,8 +30,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun createTextViewDynamically() {
         val dynamicTextView = TextView(this)
-        dynamicTextView.text = "This is dynamically created textView"
+        dynamicTextView.text = "This is dynamically created textView this is my first kotlin example as i am learning any king of mistake ,can be taken as a part of learning making my self more error free.."
         dynamicTextView.textSize = 20f
+        dynamicTextView.setJustificationMode(JUSTIFICATION_MODE_INTER_WORD);
         relLayout.addView(dynamicTextView)
     }
 }
