@@ -5,9 +5,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:id="@+id/relLayout"
+    <LinearLayout
+        android:id="@+id/mainLayout"
         android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
         android:layout_height="match_parent">
 
         <TextView
@@ -24,6 +26,6 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:text="Click Me" />
-    </RelativeLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
