@@ -3,7 +3,7 @@
 - Button click and dynamically text added to the TextView...
 - Create a new TextView programmatically in Kotlin Android
 private fun createTextViewDynamically() {
-        ...val dynamicTextView = TextView(this)
+        val dynamicTextView = TextView(this)
         dynamicTextView.text =
             "This is dynamically created textView this is my first kotlin example as i am learning any king of mistake ,can be taken as a part of learning making my self more error free.."
         dynamicTextView.textSize = 20f
